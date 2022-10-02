@@ -1,17 +1,21 @@
 .App {
   display: flex;
-  border: 1px solid black;
-  width: 450px;
-  margin: auto;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
   background: steelblue;
-  font-size: 1rem;
-  margin-top: 20%;
-  margin-bottom: 20%;
-  height: 60%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 12px #18191b;
+  border-radius: 8px;
+  background: white;
+  align-items: center;
 }
 
 .Bttn {
@@ -32,4 +36,9 @@
 .colors {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 700px) {
+  .conatiner {
+    width: auto;
+  }
 }

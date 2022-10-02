@@ -11,6 +11,7 @@ function App() {
   const randm = Math.random().toString(16).substring(2, 8);
   return (
     <div className="App">
+    <div className="container">
       <h1>Random Hex Color Generator</h1>
       <div className="colors">
         {" "}
@@ -23,6 +24,7 @@ function App() {
       <button className="Bttn" onClick={generateNumber}>
         Generate Color
       </button>
+      </div>
     </div>
   );
 }
